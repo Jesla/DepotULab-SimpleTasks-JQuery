@@ -57,19 +57,33 @@ $(document).ready(function () {
 // ul id sixthUl
 // li class sixthLiList
 
-    $('#sixthObjButton').click(function () {
-        var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
-        var list = $('#sixthUl');
+// FIRST APPROACH - UNSUCCESSFULL
 
-        list.detach().empty().each(function (i) {
-            for (var i = 0; i < friendsArray.length; i++) {
-                $(this).append('<li>' + friendsArray[i] + '</li>');
-                if (i == friendsArray.length - 1) {
-                    $(this).appendTo('#sixthUl');
-                }
-            }
-        });
-    });
+    // $('#sixthObjButton').click(function () {
+    //     var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
+    //     var list = $('#sixthUl');
+
+    //     list.detach().empty().each(function (i) {
+    //         for (var i = 0; i < friendsArray.length; i++) {
+    //             $(this).append('<li>' + friendsArray[i] + '</li>');
+    //             if (i == friendsArray.length - 1) {
+    //                 $(this).appendTo('#sixthUl');
+    //             }
+    //         }
+    //     });
+    // });
     
+    
+// SECOND APPROACH - UNSUCCESSFULL
+
+        //    $('#sixthObjButton').click(function () {
+        //            var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
+        //        for(var i = 0; i < friendsArray.length; i++){
+        //        var sixthLiList = $('<li></li>').text(friendsArray[i]);
+        //        $('#sixthUl').append(sixthLiList);
+        //        };
+        //    });
+        
+        
     
 }); // This is the end punctuation for the whole page - do not remove it
