@@ -23,11 +23,11 @@ $(document).ready(function () {
 // THIRD OBJECTIVE - WOULD TOGGLE BE BETTER?
 
     $('#thirdObjDiv').mouseenter(function () {
-    $('#thirdObjDiv').css('background-color', 'red');
+        $('#thirdObjDiv').css('background-color', 'red');
     });
-    
+
     $('#thirdObjDiv').mouseleave(function () {
-    $('#thirdObjDiv').css('background-color', '');
+        $('#thirdObjDiv').css('background-color', '');
     });
 
 // FOURTH OBJECTIVE
@@ -49,41 +49,15 @@ $(document).ready(function () {
     })
 
 
-// SIXTH OBJECTIVE - Create a button and a `ul` in your HTML. In JavaScript, create an array 
-// containing the names of your friends (at least 10. When the button is clicked, add each friend's 
-// name as an `li` to the `ul` on the page.
-// div sixtObjDiv
-// button sixthObjButton
-// ul id sixthUl
-// li class sixthLiList
+// SIXTH OBJECTIVE
 
-// FIRST APPROACH - UNSUCCESSFULL
-
-    // $('#sixthObjButton').click(function () {
-    //     var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
-    //     var list = $('#sixthUl');
-
-    //     list.detach().empty().each(function (i) {
-    //         for (var i = 0; i < friendsArray.length; i++) {
-    //             $(this).append('<li>' + friendsArray[i] + '</li>');
-    //             if (i == friendsArray.length - 1) {
-    //                 $(this).appendTo('#sixthUl');
-    //             }
-    //         }
-    //     });
-    // });
-    
-    
-// SECOND APPROACH - UNSUCCESSFULL
-
-        //    $('#sixthObjButton').click(function () {
-        //            var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
-        //        for(var i = 0; i < friendsArray.length; i++){
-        //        var sixthLiList = $('<li></li>').text(friendsArray[i]);
-        //        $('#sixthUl').append(sixthLiList);
-        //        };
-        //    });
-        
+    $('#sixthObjButton').click(function () {
+        var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
+        for (var i = 0; i < friendsArray.length; i++) {
+            var sixthLiList = $('<li></li>').text(friendsArray[i]);
+            $('#sixthUl').append(sixthLiList);
+        };
+    });
         
     
 }); // This is the end punctuation for the whole page - do not remove it
