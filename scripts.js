@@ -7,7 +7,7 @@ $(document).ready(function () {
     })
 
 
-// SECOND OBJECTIVE
+    // SECOND OBJECTIVE
 
     $('#secondObj').click(function () {
         var secondObjText = $('#secondObjTextBox').val();
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
 
-// THIRD OBJECTIVE - WOULD TOGGLE BE BETTER?
+    // THIRD OBJECTIVE - WOULD TOGGLE BE BETTER?
 
     $('#thirdObjDiv').mouseenter(function () {
         $('#thirdObjDiv').css('background-color', 'red');
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('#thirdObjDiv').css('background-color', '');
     });
 
-// FOURTH OBJECTIVE
+    // FOURTH OBJECTIVE
 
     $('<p>This is the Fourth Objective</p>').attr('id', 'fourthObjPara').appendTo('#fourthObjDiv');
     $('#fourthObjPara').click(function () {
@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
 
-// FIFTH OBJECTIVE
+    // FIFTH OBJECTIVE
 
     $('<button>#5</button>').attr('id', 'fifthObj').appendTo('#fifthObjDiv');
     $('<div>').attr('id', 'fifthObjText').appendTo('#fifthObjDiv');
@@ -49,7 +49,7 @@ $(document).ready(function () {
     })
 
 
-// SIXTH OBJECTIVE
+    // SIXTH OBJECTIVE
 
     $('#sixthObjButton').click(function () {
         var friendsArray = ['Stacy', 'JD', 'Jared', 'Brian', 'Kinley', 'Blair', 'Stephanie', 'Susan', 'Jim', 'Mark'];
@@ -58,6 +58,5 @@ $(document).ready(function () {
             $('#sixthUl').append(sixthLiList);
         };
     });
-        
-    
+
 }); // This is the end punctuation for the whole page - do not remove it
